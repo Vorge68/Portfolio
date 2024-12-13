@@ -1,0 +1,154 @@
+/* Colours */
+
+:root {
+    --navy: #082032;
+    --darkgrey: #2C394B;
+    --lightgrey: #334756;
+    --orange: #EB6440;
+    --cream: #FCA54C;
+    --white: #dbdbdb;
+  }
+  
+
+/* General styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--darkgrey);
+    color: var(--white);
+    font-weight: bold;
+}
+
+h1 {
+    margin: 15px 0;
+    text-align: center;
+}
+
+p {
+    margin: 20px 100px;
+}
+
+
+a:link {
+    color: var(--white); 
+}
+
+a:visited {
+    color: var(--white); 
+}
+
+a:hover {
+    color: var(--cream);
+}
+
+
+
+/* Navigation bar */
+nav ul {
+    display: flex;
+    justify-content: space-evenly; /* Spread items across */
+    text-align: center;
+    align-items: center; /* Vertically center items */
+    list-style: none;
+    background-color: var(--lightgrey);
+    padding: 10px 20px;
+    margin-top: 20px;
+    width: 100%; /* Ensure full width */
+}
+
+nav ul li a {
+    text-align: center; /* Center the text */
+    padding: 0 10%; 
+    white-space: nowrap; /* Prevent text from wrapping */
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Sections */
+section {
+    margin: 20px auto;
+    padding: 15px 20px;
+    background-color: var(--lightgrey);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 1500px;
+    width: 75%; 
+    text-align: center; 
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.subsection {
+    margin: 30px; 
+    padding: 15px 15px;
+    background-color: var(--lightgrey);
+    text-align: center;
+
+    width: 40%; 
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    flex-grow: 1;
+
+}
+
+/* Skills lists */
+.skills ul {
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+
+.skills ul li {
+    display: flex;
+    align-items: center; /* Vertically align text and progress bar */
+    justify-content: space-between; /* Space out text and progress bar */
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.skills ul li span {
+    display: flex;
+    align-items: right; 
+    margin-left: 10%/* Add space between text and progress bar */
+}
+
+.skills ul li div.progress {
+    background-color: var(--navy);
+    height: 12px;
+    width: 38%; 
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skills ul li div.bar {
+    background-color: var(--orange);
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out; /* Smooth animation for width changes */
+    
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(navy);
+    color: var(--white);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
