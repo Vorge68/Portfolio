@@ -7,6 +7,17 @@
         <link rel = "stylesheet" href = "styles.css">
     </head>
     <body>
+        <script>
+            function copyToClipboard(element) {
+                const text = 'victorxu6688@gmail.com';
+                navigator.clipboard.writeText(text).then(() => {
+                    alert("Copied: " + text);
+                }).catch(err => {
+                    console.error("Error copying text: ", err);
+                });
+            }
+        </script>
+
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -15,11 +26,15 @@
             </ul>
         </nav>
         <header>
-            <h1>Contact</h1>
+            <h1> Contact </h1>
         </header>
 
         <section>
-            <p> Email: <br> victorxu6688@gmail.com</p>
+            <div>
+                <p class="copy-text" onclick="copyToClipboard(this)">
+                    ✉️ victorxu6688@gmail.com 
+                </p>
+            </div>
         </section>
 
         <footer>
