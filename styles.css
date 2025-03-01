@@ -26,7 +26,27 @@ body {
     background-color: var(--darkgrey);
     color: var(--white);
     font-weight: bold;
+    opacity: 1;
 }
+
+/* Fade effect for the content (excluding nav) */
+#content {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Make content visible on page load */
+#content.fade-in {
+    opacity: 1;
+}
+
+/* Apply fade-out effect before navigation */
+#content.fade-out {
+    opacity: 0;
+}
+
+
+
 
 h1 {
     margin: 15px 0;
