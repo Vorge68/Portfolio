@@ -1,49 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Contact Me</title>
-        <link rel = "stylesheet" href = "styles.css">
-    </head>
-    <body>
-        <script>
-            function copyToClipboard(element) {
-                const text = 'vorge6688@gmail.com';
-                navigator.clipboard.writeText(text).then(() => {
-                    alert("Copied: " + text);
-                }).catch(err => {
-                    console.error("Error copying text: ", err);
-                });
-            }
-        </script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <script>
+      function copyToClipboard(element) {
+        const text = "vorge6688@gmail.com";
+        navigator.clipboard
+          .writeText(text)
+          .then(() => {
+            alert("Copied: " + text);
+          })
+          .catch((err) => {
+            console.error("Error copying text: ", err);
+          });
+      }
+    </script>
 
-        <div id="content">
+    <div id="content">
+      <nav>
+        <ul>
+          <li><a href="index.html"> Home </a></li>
+          <li><a href="projects.html"> Projects </a></li>
+          <li><a href="art.html"> Art </a></li>
+          <li><a href="contact.html"> Contact </a></li>
+        </ul>
+      </nav>
 
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Projects.html">Projects</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <header>
-                <h1> Contact </h1>
-            </header>
+      <header>
+        <h1>Contact</h1>
+      </header>
 
-            <section>
-                <div>
-                    <p class="copy-text" onclick="copyToClipboard(this)">
-                        ✉️ vorge6688@gmail.com 
-                    </p>
-                </div>
-            </section>
-
-            <footer>
-                <p>© 2025 DeepFriedFox68. All rights reserved.</p>
-            </footer>
+      <section>
+        <div>
+          <p class="copy-text" onclick="copyToClipboard(this)">
+            ✉️ vorge6688@gmail.com
+          </p>
         </div>
-    
-        <script src="script.js"></script>
-    </body>
+        <div>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/v-c-xu/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              🔗 LinkedIn
+            </a>
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>

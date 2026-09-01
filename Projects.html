@@ -1,66 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> My Projects </title>
-        <link rel = "stylesheet" href = "styles.css">
-    </head>
-    <body>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Projects.html">Projects</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Projects</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="art.html">Art</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-        <div id="content">
+    <div id="content">
+      <header>
+        <h1>Projects</h1>
+      </header>
 
-            <header>
-                <h1>Projects</h1>
-            </header>
-
-            <section>
-                <div>
-                    Here are links to see all my completed projects. If you are interested in the source code head to my <a href = "https://github.com/DeepFriedFox68"> Github. </a>
-                </div>
-            </section>
-
-            <section>
-                <div class="projects">
-                    <a href = "index.html" class="project-card"> 
-                        <img src="Images\myportfolio.jpeg">
-                        <div class="project-title">Portfolio Website</div> 
-                    </a>          
-
-                    <a href = "PhysicsSimulation\PhysicsSimulation.html" class="project-card" target="_blank" rel="noopener noreferrer"> 
-                        <img src="Images\space.jpeg">
-                        <div class="project-title">Physics Simulation</div>
-                    </a>
-                    
-                    <a href = "PongGame\PongGame.html" class="project-card" target="_blank" rel="noopener noreferrer"> 
-                        <img src="Images\pong.png">
-                        <div class="project-title">Retro Pong</div>
-                    </a> 
-
-                    <a href = "https://cav-e-man.itch.io/gunsnflowers" class="project-card" target="_blank" rel="noopener noreferrer"> 
-                        <img src="Images\startscreen.png">
-                        <div class="project-title">Guns n' Flowers</div>
-                    </a> 
-
-                    <a href = "nothing" class="project-card" target="_blank" rel="noopener noreferrer"> 
-                        <img src="Images\workinprog.jpeg">
-                        <div class="project-title">COMING SOON</div>
-                    </a> 
-                </div>
-            </section>
-            
-            <footer>
-                <p>© 2025 DeepFriedFox68. All rights reserved.</p>
-            </footer>
+      <section>
+        <div>
+          <a href="https://github.com/DeepFriedFox68"> Github </a>
         </div>
+      </section>
 
-        <script src="script.js"></script>
-    </body>
+      <section>
+        <header>Complete</header>
+
+        <div class="projects">
+          <a
+            href="PongGame\PongGame.html"
+            class="project-card"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="Images\pong.png" />
+            <div class="project-title">Retro Pong</div>
+          </a>
+
+          <a
+            href="https://cav-e-man.itch.io/gunsnflowers"
+            class="project-card"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="Images\startscreen.png" />
+            <div class="project-title">Guns n' Flowers</div>
+          </a>
+
+          <a
+            href="nothing"
+            class="project-card"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="Images\workinprog.jpeg" />
+            <div class="project-title">COMING SOON</div>
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <header>Unfinished</header>
+      </section>
+
+      <section>
+        <header>Discontinued</header>
+        <div class="projects">
+          <a
+            href="PhysicsSimulation\PhysicsSimulation.html"
+            class="project-card"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="Images\space.jpeg" />
+            <div class="project-title">Physics Simulation</div>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
